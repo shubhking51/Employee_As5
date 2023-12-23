@@ -1,0 +1,45 @@
+<body>
+    <mat-radio-group>
+   
+        <mat-radio-button (click)="sortByPercentage()">Percentage</mat-radio-button>
+        <mat-radio-button (click)="sortByAttempts()">Number Of Attempts</mat-radio-button>
+        <mat-radio-button (click)="sortBysubjectsLearning()">Subjects</mat-radio-button>
+    </mat-radio-group>
+
+<!-- <button (click)="showStudents()"> Show Students</button> -->
+<h4>Student List is:</h4>
+<table *ngIf="students.length>0"> 
+    <thead><tr>
+        <th>Rollno</th>
+        <th>Name</th>
+        <th>No of Attempts</th>
+        <th>Percentage</th>
+        <th>Subjects</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of students">
+            <td >{{s.rollno}}</td>
+            <td >{{s.name | uppercase}}</td>
+            <td >{{s.noOfAttempts}}</td>
+            <td >{{s.percentage/100 | percent}}</td>
+            <td>
+                <ul *ngFor="let sub of s.subjectsLearning">
+                    <li>{{sub}}</li>
+                </ul>
+            </td>
+            <td>
+                <button color="warn" mat-raised-button (click)="deleteByRollno(s.rollno)">Delete</button>&nbsp;
+                <button color="primary" mat-raised-button (click)="updateStudent(s)">Update</button>&nbsp;
+            </td>
+        </tr> 
+        
+        
+    </tbody>
+</table>
+<span [class]="colorClass">{{message}}</span>    
+<div *ngIf="updateClicked">
+    <app-student-update [updatedStudent]="selectedStudents" (studentEmitter)="doUpdate($event)" ></app-student-update>
+</div>
+</body>

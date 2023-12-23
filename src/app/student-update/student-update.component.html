@@ -1,0 +1,18 @@
+<!-- <p>student-update works!</p> -->
+<form (ngSubmit)="performUpdate()">
+    <br>
+    <label for="">Roll Number:</label>
+    <input type="number" [(ngModel)]="updatedStudent.rollno" name="rollno" readonly/> <br><br>
+    <label for="">Name:</label>
+    <input type="text" [(ngModel)]="updatedStudent.name" name="name" readonly/> <br><br>
+    <label for="">Number Of Attempts:</label>
+    <input type="number" [(ngModel)]="updatedStudent.noOfAttempts" name="noOfAttempts" > <br><br>
+    <label for="">Percentage:</label>
+    <input type="number" [(ngModel)]="updatedStudent.percentage" name="percentage" readonly/> <br><br>
+    <label for="">Subjects Learning:</label>
+    <input type="text" [(ngModel)]="updatedStudent.subjectsLearning" name="subjectsLearning" readonly/> <br><br>
+    <!-- <input type="submit" value="update"> -->
+    <button type="submit" color="primary" mat-raised-button >Update</button>
+
+    <!-- ?\<input type="text" [(ngModel)]="updatedStudent.rollno" name="rollno" readonly/> -->
+</form>

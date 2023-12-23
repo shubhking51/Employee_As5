@@ -1,0 +1,38 @@
+
+<div class="registercontainer" >
+    <!-- <h2>Login Form </h2> -->
+    <br> <br>
+    <!-- <form (ngSubmit)="perform_Register()"> -->
+        <form>
+            <mat-form-field>
+                <mat-label>Roll Number </mat-label>
+            <input matInput type="number" placeholder="rollno" name="rollno" [(ngModel)]="rollno" required>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>Name </mat-label>
+            <input matInput type="text" placeholder="name" name="name" [(ngModel)]="name" required>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>Number of attempts</mat-label>
+            <input matInput type="number" placeholder="attempts" name="noOfAttempts" [(ngModel)]="noOfAttempts" required>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>Percentage</mat-label>
+            <input matInput type="number" placeholder="percentage" name="percentage" [(ngModel)]="percentage" required>
+            </mat-form-field>
+            <br>
+ 
+  
+    
+    <button mat-raised-button type="submit">Register Student</button>
+    {{message}}
+    
+   
+</form>
+</div>
+
+
+

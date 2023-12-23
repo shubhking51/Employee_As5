@@ -1,0 +1,22 @@
+<!-- <div class="topnav">
+    <a *ngIf= "!service.isUserLoggedIn" routerLink="login">Login</a>
+    <a *ngIf= "!service.isUserLoggedIn" routerLink="students">Students</a>
+    <a *ngIf= "!service.isUserLoggedIn" routerLink="register">Register</a>
+    <a  routerLink="aboutus">About Us</a>
+    <a  routerLink="contactus">Contact Us</a>
+    <a *ngIf= "!service.isUserLoggedIn" routerLink="logout">Logout</a>
+    
+</div> -->
+
+
+  
+        <!-- Button -->
+        <button mat-raised-button  *ngIf= "!service.isUserLoggedIn" routerLink="login" >Login</button> <br><br>
+        <button mat-raised-button *ngIf= "!service.isUserLoggedIn" routerLink="students">Students</button><br><br>
+        <button mat-raised-button *ngIf= "!service.isUserLoggedIn" routerLink="register">Register</button><br><br>
+        <button mat-raised-button  routerLink="aboutus">About Us</button><br><br>
+        <button mat-raised-button  routerLink="contactus">Contact Us</button><br><br>
+        <button mat-raised-button   routerLink="logout">Logout</button><br><br>
+        
+    
+

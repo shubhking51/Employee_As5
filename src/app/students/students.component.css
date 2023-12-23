@@ -1,0 +1,27 @@
+body{
+    padding: 10px;
+}
+table,th,td{
+    border:1px solid;
+    text-align:center;
+}
+button{
+    background-color: green;
+    color: white;
+    text-align:center;
+    font-size: 14px;
+}
+/* .buttonDelete{
+    background-color: red;
+} */
+span{
+    font-size:25px;
+    background-color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.success{
+    color: green;
+}
+.error{
+    color: red;
+}

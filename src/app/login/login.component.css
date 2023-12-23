@@ -1,0 +1,25 @@
+.logincontainer{
+    background-color: rgb(188, 240, 175);    
+    width: 30%;
+    height: 250px;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 20px ;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+form{
+    text-align: center;
+    border-radius: 5px  ;
+    font-size: 17px;
+    
+
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+}
+button{
+font-size: 15px;
+color: black;
+}
